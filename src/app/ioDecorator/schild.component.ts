@@ -11,7 +11,8 @@ export class SchildComponent  {
 
   @Output() public searchByName: EventEmitter<string> =
     new EventEmitter<string>();
-
+    str:string="";
+ 
   constructor() {
     this.ename = '';
   }
@@ -53,18 +54,23 @@ export class SchildComponent  {
       fulltime: false,
     },
   ];
-
+ 
   msg: string = 'not found';
+   n:number=0;
   searchName() {
     this.msg = 'Not Found';
-    for (let i of this.employees) {
-      if (i.ename === this.ename) {
-       this.msg = 'employee found';
+    for (let i of this.employees) 
+    {
+      if (i.ename === this.ename) 
+      {
         
+         this.msg = 'employee found';
+         alert("Employee Found "+JSON.stringify(i));
         break;
       }
     }
     this.searchByName.emit(this.msg);
+   
   }
 
 }

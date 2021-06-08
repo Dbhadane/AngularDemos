@@ -24,6 +24,7 @@ import { ChildComponent } from './ioDecorator/child.component';
 import { SparentComponent } from './ioDecorator/sparent.component';
 import { SchildComponent } from './ioDecorator/schild.component';
 import { ContactComponent } from './FormDemos/contact.component';
+import { StudComponent } from './FormDemos/stud.component';
 
 
 
@@ -55,6 +56,7 @@ import { ContactComponent } from './FormDemos/contact.component';
     SparentComponent,
     SchildComponent,
     ContactComponent,
+    StudComponent,
 
   ],
 

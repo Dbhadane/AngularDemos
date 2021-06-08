@@ -1,4 +1,9 @@
-
-<input type="text" name="ename" [(ngModel)]="ename"/>
-<app-schild [ename]="ename" (searchByName)="parentSearch($event)"></app-schild>
-{{fromChild}}
+<table border="2">
+   <tr>  
+        <input type="text" name="ename" [(ngModel)]="ename" />
+    <app-schild [ename]="ename" (searchByName)="parentSearch($event)"></app-schild>
+</tr>
+ <tr>
+    {{fromChild}}
+</tr>   
+</table>
