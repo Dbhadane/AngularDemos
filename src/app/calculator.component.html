@@ -1,0 +1,19 @@
+<p>Calculator</p>
+<div>
+    <input type="number" [(ngModel)]="num1" placeholder="Enter number 1" />
+    
+    <input type="number" [(ngModel)]="num2" placeholder="Enter number 2" />
+</div>
+
+<div>
+    <table>
+    <tr><td><button (click)="add1()">ADD</button></td>
+    <td> <h2>Addition {{add}}</h2></td></tr>
+    <tr><td><button (click)="sub1()">SUB</button></td>
+    <td><h2>Substraction {{sub}}</h2></td></tr>
+    <tr><td><button (click)="mul1()">MUL</button></td>
+    <td><h2>Multiplication {{mul}}</h2></td></tr>
+    <tr><td><button (click)="div1()">DIV</button></td>
+    <td><h2>Division {{div}}</h2></td></tr>
+</table>
+</div>

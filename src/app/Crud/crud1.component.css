@@ -1,0 +1,13 @@
+table{
+    background-color:#ff6347;
+    font-style: italic;
+    border: seagreen;
+    border-style: solid;
+}
+.bolder {
+    font-weight: bolder;
+ }
+ input[type=number] {
+    -moz-appearance: none;
+  }
+

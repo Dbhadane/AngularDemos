@@ -1,0 +1,24 @@
+<table border="1">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>code</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Salary</th>
+            
+        </tr>
+    </thead>
+    <tbody *ngFor='let emp of employee; let i= index; '>
+        <tr *ngIf="emp.name==='DB'">
+        
+        <td>{{i}}</td>
+        <td>{{emp.code}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.salary}}</td>
+       
+    </tr>
+    </tbody>
+
+</table>

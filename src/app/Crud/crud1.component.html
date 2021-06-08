@@ -1,0 +1,68 @@
+<table border="1">
+    <th colspan="2">
+        <marquee Scrollamount="4">Employee Data Crud</marquee>
+    </th>
+    <tr>
+        <td>Enter Eid:-</td>
+        <td><input type="number" placeholder="Employee id" [(ngModel)]="id" /></td>
+    </tr>
+    <tr>
+        <td>Enter Name:-</td>
+        <td><input type="text" placeholder="Employee Name" [(ngModel)]="name" /></td>
+    </tr>
+    <tr>
+        <td>Enter Salary:-</td>
+        <td><input type="number" placeholder="Salary" [(ngModel)]="sal" /></td>
+    </tr>
+    <tr>
+        <td>Enter Profile:-</td>
+        <td><input type="text" placeholder="Profile" [(ngModel)]="profile" /></td>
+    </tr>
+    <tr>
+        <td>Company Name:-</td>
+        <td><input type="text" placeholder="Company Name" [(ngModel)]="cmp" /></td>
+    </tr>
+    <tr>
+        <td colspan="100%"><button (click)="Add()"> Submit</button>
+
+            <button (click)="updateData()" *ngIf="isEdited"> Update Data</button>
+
+        </td>
+
+    </tr>
+</table>
+
+<fieldset>
+    <legend>
+        <marquee>Employee Details</marquee>
+    </legend>
+    <table border="2">
+        <thead>
+            <tr>
+                <th colspan="100%">Employee</th>
+            </tr>
+            <tr *ngIf='emp.length > 0'>
+                <th></th>
+                <th></th>
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Emp Salary</th>
+                <th>Emp Profile</th>
+                <th>Emp Company Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor='let emp of emp;let i=index'>
+                <td><button><a (click)="removeEmp(i)">Remove</a></button></td>
+                <td>
+                    <p *ngIf="emp.sal>1000"><button><a (click)="editEmp(i)">Edit</a></button></p>
+                </td>
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.sal}}</td>
+                <td>{{emp.profile}}</td>
+                <td>{{emp.cmp}}</td>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>

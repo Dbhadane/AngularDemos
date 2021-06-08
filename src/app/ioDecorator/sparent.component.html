@@ -1,0 +1,4 @@
+
+<input type="text" name="ename" [(ngModel)]="ename"/>
+<app-schild [ename]="ename" (searchByName)="parentSearch($event)"></app-schild>
+{{fromChild}}

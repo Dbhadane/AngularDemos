@@ -1,0 +1,18 @@
+  
+table
+{
+    border:  solid 1px;
+}
+
+td
+{
+   border: solid 1px;
+   text-align: center;
+}
+th
+{
+    border: solid 1px;
+    text-align: center;
+    color: yellow;
+    background-color: red;
+}

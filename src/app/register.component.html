@@ -1,0 +1,39 @@
+<table border="1"> 
+    <th style="color: red;" colspan="2">Employee Salary</th>
+   
+   <tr><td>Enter Emp id:</td> 
+       <td><input type="number" [(ngModel)]="eid" placeholder="Eid" /></td></tr> 
+   <tr><td>Enter Fname: </td> 
+       <td><input type="text" [(ngModel)]="sname" placeholder="Fname" /></td></tr>
+   <tr><td>Enter Lname:</td> 
+        <td><input type="text" [(ngModel)]="lname"  /></td></tr>
+   <tr><td>Enter Salary:</td> 
+        <td><input type="number" [(ngModel)]="sal" placeholder="Salary" /></td></tr>
+   <tr><td>Enter GS in Percentage:</td> 
+        <td><input type="number" [(ngModel)]="GS" placeholder="Salary" /></td></tr>  
+   <tr><td>Enter HRA in Percentage:</td> 
+        <td><input type="number" [(ngModel)]="HRA" placeholder="Salary" /></td></tr>        
+   <tr><button (click)="cal()">Check Sal</button></tr>         
+        
+ </table>
+
+ <table style="background-color: skyblue;" border="1">
+      <tr>
+           <th>Emp id</th>
+           <th>Fname</th>
+           <th>Lname</th>
+           <th>Salary</th>
+           <th>GS</th>
+           <th>HRA</th>
+           <th>Total</th>
+     </tr>
+     <tr>
+          <td>{{eid}}</td>
+          <td>{{sname}}</td>
+          <td>{{lname}}</td>
+          <td>{{sal}}</td>
+          <td>{{GS}}</td>
+          <td>{{HRA}}</td>
+          <td>{{total}}</td>
+     </tr>
+ </table>
