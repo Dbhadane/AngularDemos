@@ -15,23 +15,18 @@ import { FirstPipe } from './PipeDemos/first.pipe';
 import { Crud1Component } from './Crud/crud1.component';
 import { Crud2Component } from './Crud/crud2.component';
 import { BankcrudComponent } from './Crud/bankcrud.component';
-import { EmpComponent } from './directiveDemos/ifexample/emp.component';
-import { MyfilterPipe } from './directiveDemos/ifexample/myfilter.pipe';
-import { StudentComponent } from './directiveDemos/ifexample/student.component';
-import { StudfilterPipe } from './directiveDemos/ifexample/studfilter.pipe';
 import { ParentComponent } from './ioDecorator/parent.component';
 import { ChildComponent } from './ioDecorator/child.component';
 import { SparentComponent } from './ioDecorator/sparent.component';
 import { SchildComponent } from './ioDecorator/schild.component';
 import { ContactComponent } from './FormDemos/contact.component';
 import { StudComponent } from './FormDemos/stud.component';
-
-
-
-
-
-
-
+import { StudfilterPipe } from './DirectiveDemos/ifexample/studfilter.pipe';
+import { StudentComponent } from './DirectiveDemos/ifexample/student.component';
+import { MyfilterPipe } from './DirectiveDemos/ifexample/myfilter.pipe';
+import { EmpComponent } from './DirectiveDemos/ifexample/emp.component';
+import {TempformComponent} from './FormDemos/tempform.component'
+import { from } from 'rxjs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +52,7 @@ import { StudComponent } from './FormDemos/stud.component';
     SchildComponent,
     ContactComponent,
     StudComponent,
-
+    TempformComponent
   ],
 
   imports: [
