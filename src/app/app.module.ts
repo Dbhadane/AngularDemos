@@ -68,4 +68,4 @@ import { StudComponent } from './FormDemos/stud.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
